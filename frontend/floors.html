@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>首页 - 图书管理系统</title>
+  <title>馆藏楼层索引 - 图书管理系统</title>
   <link rel="stylesheet" href="css/style.css?v=20260301">
 </head>
 <body>
@@ -16,7 +16,7 @@
         </div>
         <nav>
           <ul class="nav-list">
-            <li><a href="index.html" class="current">首页</a></li>
+            <li><a href="index.html">首页</a></li>
             <li><a href="login.html">登录</a></li>
             <li><a href="register.html">注册</a></li>
             <li><a href="about.html">关于</a></li>
@@ -24,7 +24,7 @@
               <span class="nav-drop-trigger">服务</span>
               <div class="nav-drop">
                 <a href="list.html">图书列表</a>
-                <a href="floors.html">馆藏楼层索引</a>
+                <a href="floors.html" class="current">馆藏楼层索引</a>
                 <a href="borrow.html">借阅说明</a>
                 <a href="contact.html">联系</a>
               </div>
@@ -36,50 +36,20 @@
     </header>
 
     <main class="main">
-      <section class="hero-section">
-        <h1>欢迎使用图书管理系统</h1>
-        <p>本系统为读者提供图书检索、借阅与归还等一站式服务，倡导阅读，共建书香社会。</p>
-      </section>
-
-      <section>
-        <h2 class="section-title">本馆简介</h2>
-        <div class="card">
-          <p>本图书管理系统致力于为读者提供便捷的借阅与查询服务。馆藏涵盖文学、科技、教育、艺术等多类图书，支持在线检索与预约，欢迎广大读者使用。</p>
-        </div>
-      </section>
-
-      <section>
-        <h2 class="section-title">快捷入口</h2>
-        <div class="quick-links">
-          <a href="login.html">
-            <div class="card">
-              <h3 class="card-title">登录</h3>
-              <p>已有账号？点击登录进入后台管理。</p>
-            </div>
-          </a>
-          <a href="register.html">
-            <div class="card">
-              <h3 class="card-title">注册</h3>
-              <p>新用户请先注册，获取借阅权限。</p>
-            </div>
-          </a>
-          <a href="list.html">
-            <div class="card">
-              <h3 class="card-title">图书列表</h3>
-              <p>浏览馆藏并从列表进入借阅示例。</p>
-            </div>
-          </a>
-          <a href="about.html">
-            <div class="card">
-              <h3 class="card-title">关于</h3>
-              <p>了解本系统的发展历程与服务说明。</p>
-            </div>
-          </a>
-        </div>
-      </section>
+      <div class="floor-breadcrumb">
+        <a href="index.html">首页</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">馆藏楼层索引</span>
+      </div>
 
       <section>
         <h2 class="section-title">馆藏楼层索引</h2>
+        <div class="card">
+          <p>本馆共设地上三层及地下书库，欢迎读者按分类号查阅馆藏。点击各楼层卡片可查看详细信息，包括分类号范围、阅览座位、服务台位置及外借政策。</p>
+        </div>
+      </section>
+
+      <section>
         <div class="floor-index">
           <a href="floor-1f.html" class="floor-card">
             <div class="floor-card-header">
@@ -99,7 +69,7 @@
                 <p class="floor-card-subtitle">社会科学 · 政治法律</p>
               </div>
             </div>
-            <p class="floor-card-desc">涵盖社会科学总论、政治、法律、军事、经济、文化科学教育等类图书，提供宽敞的阅览空间。</p>
+            <p class="floor-card-desc">涵盖社会科学总论、政治、法律、军事、经济、文化科学教育等类图书。</p>
           </a>
           <a href="floor-3f.html" class="floor-card">
             <div class="floor-card-header">
@@ -109,7 +79,7 @@
                 <p class="floor-card-subtitle">文学艺术 · 语言文字</p>
               </div>
             </div>
-            <p class="floor-card-desc">收藏中外文学名著、诗歌散文、戏剧小说及艺术理论类图书，是文学爱好者的阅读天地。</p>
+            <p class="floor-card-desc">收藏中外文学名著、诗歌散文、戏剧小说及艺术理论类图书。</p>
           </a>
           <a href="floor-b1.html" class="floor-card">
             <div class="floor-card-header">
@@ -119,8 +89,20 @@
                 <p class="floor-card-subtitle">历史典藏 · 过刊合订</p>
               </div>
             </div>
-            <p class="floor-card-desc">馆藏历史文献、过刊合订本及较少使用的图书，需至服务台申请调阅，不提供现场阅览。</p>
+            <p class="floor-card-desc">馆藏历史文献、过刊合订本及较少使用的图书，需至服务台申请调阅。</p>
           </a>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">楼层导览说明</h2>
+        <div class="card">
+          <ul>
+            <li>开放时间：周一至周日 8:30 - 22:00（地下书库 8:30 - 17:30）</li>
+            <li>入馆请保持安静，将手机调至静音模式</li>
+            <li>包袋请寄存在一层存包处</li>
+            <li>如有疑问可前往各层服务台或拨打咨询电话</li>
+          </ul>
         </div>
       </section>
     </main>
